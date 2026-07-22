@@ -6,8 +6,8 @@
   <meta name="description" content="C9ber Hub - a personal download hub for tools, APKs, scripts, and files.">
   <title>C9ber Hub | Personal Download Hub</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="preconnect" href="https://api.github.com">
-  <link rel="preconnect" href="https://github.com">
+  <link rel="preconnect" href="https://mega.nz">
+  <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,7 +22,7 @@
       </a>
       <div class="nav-links">
         <a href="#downloads">Downloads</a>
-        <a href="https://github.com/C9ber99/hub/releases" target="_blank" rel="noreferrer">Releases</a>
+        <a href="https://mega.nz" target="_blank" rel="noreferrer">MEGA</a>
         <a href="https://github.com/C9ber99/hub" target="_blank" rel="noreferrer">GitHub</a>
       </div>
     </nav>
@@ -34,21 +34,33 @@
         <p class="eyebrow">Personal static download vault</p>
         <h1>C9ber Hub</h1>
         <p class="hero-copy">
-          Tools, APKs, scripts, and files available anywhere, anytime, powered by GitHub Releases with no backend.
+          Tools, APKs, scripts, and files available anywhere, anytime, powered by a shared MEGA folder with no backend.
         </p>
+        <div class="hero-stats" aria-label="Hub highlights">
+          <span><strong>MEGA</strong> Sync</span>
+          <span><strong>Static</strong> Pages</span>
+          <span><strong>Live</strong> Search</span>
+        </div>
         <div class="hero-actions">
           <a class="primary-action" href="#downloads">Browse Downloads</a>
-          <a class="ghost-action" href="https://github.com/C9ber99/hub/releases" target="_blank" rel="noreferrer">Upload a Release</a>
+          <a class="ghost-action" href="https://mega.nz" target="_blank" rel="noreferrer">Open MEGA</a>
         </div>
       </div>
 
       <aside class="status-panel" aria-label="Hub status">
+        <span class="panel-code">SYS-ONLINE</span>
         <div>
           <span class="status-dot"></span>
-          <span>GitHub API Sync</span>
+          <span>MEGA Folder Sync</span>
         </div>
-        <strong id="release-count">Scanning releases...</strong>
+        <strong id="release-count">Scanning tools...</strong>
         <small id="cache-status">Fast cache enabled</small>
+        <div class="signal-bars" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </aside>
     </section>
 
@@ -75,7 +87,7 @@
 
       <div class="loading-state" id="loading-state" role="status" aria-live="polite">
         <span class="spinner"></span>
-        <span>Fetching GitHub releases...</span>
+        <span>Syncing MEGA tools...</span>
       </div>
 
       <div class="message-state hidden" id="message-state" aria-live="polite"></div>
